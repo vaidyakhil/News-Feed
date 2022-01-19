@@ -51,4 +51,9 @@ dependencies {
 
     // swipe tp refresh
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swipe_to_refresh_version"
+
+    // leak canary
+    // debugImplementation because LeakCanary should only run in debug builds.
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.8.1'
+
 }

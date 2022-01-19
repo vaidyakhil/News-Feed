@@ -15,11 +15,7 @@ import com.vaidyakhil.newsfeed.R
 import com.vaidyakhil.newsfeed.listing.model.NewsFeedDataManagerImpl
 import com.vaidyakhil.newsfeed.listing.presenter.NewsFeedPresenterImpl
 import androidx.core.content.ContextCompat
-
 import androidx.recyclerview.widget.DividerItemDecoration
-
-
-
 
 class ListingActivity : AppCompatActivity(), NewsFeedContract.View {
 
@@ -53,6 +49,7 @@ class ListingActivity : AppCompatActivity(), NewsFeedContract.View {
     private fun configureLoadMoreButton() {
         loadMoreButton.visibility = View.INVISIBLE
         loadMoreButton.setOnClickListener {
+            loadMoreButton.visibility = View.GONE
             loadData()
         }
     }
